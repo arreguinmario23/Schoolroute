@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">School-Route</string>
+    <string name="texto01">Una mejor comodidad en un ambito diario</string>
+    <string name="texto02">BIENVENIDO</string>
+    <string name="texto03">Ingresa para Continuar</string>
+    <string name="texto04">Olvide mi Contraseña</string>
+    <string name="texto05">INGRESAR</string>
+    <string name="texto06">Soy un Nuevo Usuario</string>
+    <string name="texto07">BIENVENIDO</string>
+    <string name="texto08">Registrate para Crear un Usuario</string>
+    <string name="texto09"> REGISTRARSE</string>
+    <string name="texto10">¿Ya Cuento con un Registro?</string>
+    <string name="texto11">ELIGE LA OPCION QUE DESEES</string>
+    <string name="texto12">Mapeo de rutas actuales</string>
+    <string name="texto13">Localizar un tranporte cercano</string>
+    <string name="texto14">Solicitar un transporte</string>
+    <string name="texto15">Mi ubicacion actual</string>
+    <string name="texto16">SALIR</string>
+</resources>
