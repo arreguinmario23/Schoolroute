@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,62 +7,114 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3"
     android:orientation="vertical"
-    android:padding="20dp"
-    android:id="@+id/loginLayout">
-    <ImageView
-        android:id="@+id/imagen_logo"
-        android:layout_width="350dp"
-        android:layout_height="250dp"
-        android:src="@mipmap/logo2"
-        android:transitionName="logo_trans" />
+    android:background="@color/white"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imagen_logo"
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo2"
+            android:transitionName="logo_trans"/>
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_dialog_map"
+            android:drawableTint="@color/black"
+            android:text="@string/texto07"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:transitionName="texto_trans"/>
 
-    <TextView
-        android:id="@+id/texto01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/texto02"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:transitionName="texto_trans"/>
-    <TextView
-        android:id="@+id/texto02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/texto11"
-        android:textSize="23sp"/>
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@android:drawable/ic_input_get"
 
-    <Button
-        android:id="@+id/bMapeo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F86435"
-        android:text="@string/texto12"/>
-    <Button
-        android:id="@+id/bLocalizar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#777"
-        android:background="#00000000"
-        android:text="@string/texto13" />
-    <Button
-        android:id="@+id/bSolicitar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F86435"
-        android:text="@string/texto14" />
-    <Button
-        android:id="@+id/bUbicacion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#777"
-        android:background="#00000000"
-        android:text="@string/texto15" />
+            android:drawableTint="@color/black"
+            android:text="@string/texto08"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
-    <Button
-        android:id="@+id/bSalir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F86435"
-        android:text="@string/texto16" />
-</LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Completo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Control"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Contraseña"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:drawableTint="@color/black"
+            android:text="@string/texto09"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:drawableTint="@color/black"
+            android:text="@string/texto10"
+            android:textColor="#000" />
+    </LinearLayout>
+</ScrollView>

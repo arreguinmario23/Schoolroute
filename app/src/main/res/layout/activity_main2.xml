@@ -21,25 +21,32 @@
         android:id="@+id/texto01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:drawableTint="@color/black"
         android:text="@string/texto02"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:transitionName="texto_trans"/>
+        android:transitionName="texto_trans" />
+
     <TextView
         android:id="@+id/texto02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@android:drawable/ic_menu_myplaces"
         android:text="@string/texto03"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etUser"
         android:layout_width="374dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:drawableTint="@color/black"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint=" No_Control"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,36 +58,35 @@
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawableTint="@color/black"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint=" Contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUser" />
-    <Button
-        android:id="@+id/btn_olvidar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_margin="5dp"
-        android:text="@string/texto04"
-        android:textSize="12sp"
-        android:textColor="#777"
-        android:background="#00000000"/>
+
     <Button
         android:id="@+id/bInicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F86435"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="?android:attr/fingerprintAuthDrawable"
+        android:drawableTint="#000000"
         android:text="@string/texto05"
-        android:background="#F86435"/>
+        android:textColor="@color/black"/>
 
 
     <Button
         android:id="@+id/btn_registrarse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
         android:text="@string/texto06"
-        android:textColor="#022B3E"
-        android:background="#00000000"/>
+        android:textColor="#022B3E" />
 </LinearLayout>

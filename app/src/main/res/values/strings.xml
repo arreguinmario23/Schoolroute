@@ -16,4 +16,6 @@
     <string name="texto14">Solicitar un transporte</string>
     <string name="texto15">Mi ubicacion actual</string>
     <string name="texto16">SALIR</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
 </resources>
